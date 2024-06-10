@@ -58,12 +58,35 @@ function generateMarkdown(data) {
 
   ${data.description}
 
+  ## Installation
+
+  ${data.installation}
+
+  ## Usage
+
+  ${data.usage}
+
+  ## Contributing
+
+  ${data.contributing}
+
+  ## Test
+
+  ${data.test}
+
   ## License
 
   ${renderLicenseSection(data.license)}
 
   ${renderLicenseLink(data.license)}
 
+  ## Github Username
+
+  ${data.github_username}
+
+  ## Email Address
+
+  ${data.email_address}
 `;
 }
 

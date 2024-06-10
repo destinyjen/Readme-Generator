@@ -18,12 +18,36 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  
+  if (license === "Apache License 2.0") {
+    return `[http://www.apache.org/licenses/](http://www.apache.org/licenses/)`
+  }
+  if (license === "GNU General Public License v3.0") {
+    return `[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)`
+  }
+  if (license === "MIT License"){
+    return `[https://opensource.org/license/mit](https://opensource.org/license/mit)`
+  }
+  if (license === "None"){
+    return ``
+  }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === "Apache License 2.0") {
+    return `A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
+  }
+  if (license === "GNU General Public License v3.0") {
+    return `Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.`
+  }
+  if (license === "MIT License"){
+    return `A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
+  }
+  if (license === "None"){
+    return ``
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -33,6 +57,12 @@ function generateMarkdown(data) {
   ## Description
 
   ${data.description}
+
+  ## License
+
+  ${renderLicenseSection(data.license)}
+
+  ${renderLicenseLink(data.license)}
 
 `;
 }

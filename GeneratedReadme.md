@@ -1,25 +1,25 @@
-# a
+# weather app
   ![Static Badge](https://img.shields.io/badge/License-MIT%20License-brightgreen)
 
   ## Description
 
-  b
+  this is a weather application
 
   ## Installation
 
-  c
+  N/A
 
   ## Usage
 
-  d
+  N/A
 
   ## Contributing
 
-  e
+  Have a blast contributing!
 
   ## Test
 
-  f
+  Nothing yet
 
   ## License
 
@@ -29,8 +29,8 @@
 
   ## Github Username
 
-  f
+  dejenkins
 
   ## Email Address
 
-  g
+  destiny.jenkins64@yahoo.com
